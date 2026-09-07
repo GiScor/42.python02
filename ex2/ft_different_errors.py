@@ -4,7 +4,7 @@ def garden_operations(operation_number: int) -> int:
     elif operation_number == 1:
         i = 1 / 0
     elif operation_number == 2:
-        i = open("nonexistent.mkv")
+        open("nonexistent.mkv")
     elif operation_number == 3:
         i = 1 + 'abc'
     else:
