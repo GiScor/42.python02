@@ -1,9 +1,9 @@
-def input_temperature(temp_str: str) -> int:
+def input_temperature(temp_str: int | str) -> int:
     return int(temp_str)
 
 
 def test_temperature() -> None:
-    tests = [25, 'abc']
+    tests: list[int | str] = [25, 'abc']
     for t in tests:
         print(f"Input data is '{t}'")
         try:
